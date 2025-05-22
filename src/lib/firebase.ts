@@ -1,9 +1,16 @@
+
 // Import the functions you need from the SDKs you need
 import { initializeApp, getApps, getApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
+
+// For debugging: Log the value of the API key environment variable
+console.log(
+  "Attempting to read NEXT_PUBLIC_FIREBASE_API_KEY:",
+  process.env.NEXT_PUBLIC_FIREBASE_API_KEY
+);
 
 const apiKey = process.env.NEXT_PUBLIC_FIREBASE_API_KEY;
 
